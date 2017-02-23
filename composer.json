@@ -1,0 +1,24 @@
+{
+    "name": "pedrofaria/hope-test-app",
+    "description": "Tecnical test application",
+    "authors": [
+        {
+            "name": "Pedro Faria",
+            "email": "eu@eusouopedro.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/pedrofaria/hope"
+        }
+    ],
+    "require": {
+        "pedrofaria/hope": "dev-develop"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}

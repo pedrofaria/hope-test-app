@@ -1,0 +1,13 @@
+version: '2'
+services:
+
+    # Application container
+    php:
+        build: .
+        restart: unless-stopped
+        volumes:
+            - ./:/var/www/html
+        ports:
+            - "3000:80"
+        environment:
+            DEBUG: 'true'
