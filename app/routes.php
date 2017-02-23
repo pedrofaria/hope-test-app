@@ -31,3 +31,5 @@ $route->add('GET', '/', function() {
 });
 
 $route->add('GET', '/ping', 'App\Controllers\HomeController::ping');
+
+$route->add('GET', '/my-name-is/{name}', 'App\Controllers\HomeController::name');
