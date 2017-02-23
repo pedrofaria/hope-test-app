@@ -4,13 +4,16 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $app = new Hope\Application();
 
-$app->addExternalProviders([
-    // App\Providers\YourProviderClassProvider::class,
-]);
+// $app->addExternalProviders([
+//     // App\Providers\YourProviderClassProvider::class,
+// ]);
 
-$app->setRouteFile(__DIR__ . '/../config/routes.php');
+$app->setRoute(__DIR__ . '/../app/routes.php');
+
+// $app->setRoute(function(Hope\Route $route) {
+//     $route->add('GET', '/test', function() { return ['teste' => true]; });
+// });
 
 $app->bootstrap();
-$app->run();
 
-return $app;
+$app->run();
