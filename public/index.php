@@ -10,8 +10,8 @@ $app = new Hope\Application();
 
 $app->setRoute(__DIR__ . '/../app/routes.php');
 
-// $app->setRoute(function(Hope\Route $route) {
-//     $route->add('GET', '/test', function() { return ['teste' => true]; });
+// $app->setRoute(function(Hope\Router\RouteColletor $route) {
+//     $route->get('/test', function() { return ['teste' => true]; });
 // });
 
 $app->bootstrap();
