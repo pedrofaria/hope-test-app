@@ -30,6 +30,12 @@ $route->add('GET', '/', function() {
     return ['status' => true];
 });
 
+$route->addGroup('/recipes', function ($route) {
+    $route->add('GET', '/status', function() {
+        return ['status' => true];
+    });
+});
+
 $route->add('GET', '/ping', 'App\Controllers\HomeController::ping');
 
 $route->add('GET', '/my-name-is/{name}', 'App\Controllers\HomeController::name');
