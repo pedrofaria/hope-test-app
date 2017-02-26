@@ -1,8 +1,9 @@
-FROM php:7.0-apache
+FROM php:7-apache
 	
 RUN apt-get update && apt-get install -y \
-        libmcrypt-dev git zip nodejs \
-        && docker-php-ext-install -j$(nproc) mcrypt
+        libmcrypt-dev git zip
+
+RUN docker-php-ext-install -j$(nproc) mcrypt
 
 RUN { \
 		echo '<VirtualHost *:80>'; \
