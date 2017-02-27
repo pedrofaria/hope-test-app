@@ -3,7 +3,7 @@ services:
 
     # Application container
     php:
-        build: .
+        image: pedrofaria/php:7-apache
         restart: unless-stopped
         volumes:
             - ./:/var/www/html
