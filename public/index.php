@@ -14,6 +14,10 @@ $app->setRoute(__DIR__ . '/../app/routes.php');
 //     $route->get('/test', function() { return ['teste' => true]; });
 // });
 
+$app->addMiddleware([
+    'auth' => App\Middlewares\AuthMiddleware::class
+]);
+
 $app->bootstrap();
 
 $app->run();

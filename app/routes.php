@@ -34,7 +34,7 @@ $route->addGroup('/recipes', function ($route) {
     $route->add('GET', '/status', function() {
         return ['status' => true];
     });
-});
+}, ['auth']);
 
 $route->add('GET', '/ping', 'App\Controllers\HomeController::ping');
 
