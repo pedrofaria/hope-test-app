@@ -7,12 +7,6 @@
             "email": "eu@eusouopedro.com"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/pedrofaria/hope"
-        }
-    ],
     "require": {
         "pedrofaria/hope": "1.0.0"
     },
