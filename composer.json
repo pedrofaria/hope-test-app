@@ -11,15 +11,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/pedrofaria/hope"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/pedrofaria/FastRoute"
         }
     ],
     "require": {
-        "nikic/fast-route": "dev-extradata",
-        "pedrofaria/hope": "dev-develop"
+        "pedrofaria/hope": "1.0.0"
     },
     "autoload": {
         "psr-4": {
